@@ -1,0 +1,23 @@
+.bg-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-container > button {
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 30px;
+  font-weight: 800;
+  transition: all 0.5s ease;
+}
+
+.bg-container>button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.025);
+}
