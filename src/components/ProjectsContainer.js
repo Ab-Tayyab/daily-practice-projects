@@ -3,7 +3,7 @@ import "./ProjectsContainer.css";
 import projectsList from "./ProjectsList";
 
 const ProjectsContainer = () => {
-  const [projectName, setProjectName] = useState("Background Changer");
+  const [projectName, setProjectName] = useState("Background Color Changer");
 
   const clickHandler = (e) => {
     setProjectName(e);
