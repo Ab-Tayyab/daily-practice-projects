@@ -1,0 +1,37 @@
+.digital-clock-container{
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.hour-and-minute{
+    font-size: 150px;
+    color: rgb(39, 161, 151);
+}
+
+.second{
+    color: red;
+}
+
+.digital-clock-day-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.digital-clock-days{
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+}
+
+.current-day{
+    color: rgb(39, 161, 151);
+    font-weight: 600;
+    font-size: 22px !important;
+    border-bottom: 1px dotted rgb(39, 161, 151);
+}
