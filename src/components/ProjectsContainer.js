@@ -3,7 +3,7 @@ import "./ProjectsContainer.css";
 import projectsList from "./ProjectsList";
 
 const ProjectsContainer = () => {
-  const [projectName, setProjectName] = useState("Digital Clock");
+  const [projectName, setProjectName] = useState("Client Carousal");
 
   const clickHandler = (e) => {
     setProjectName(e);

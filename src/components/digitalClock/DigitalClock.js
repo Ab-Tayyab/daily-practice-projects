@@ -15,22 +15,27 @@ const DigitalClock = () => {
     function updateClock() {
       let data = new Date();
       const day = String(data.getDay()).padStart(2, "0");
-      const hour = String(data.getHours()).padStart(2, "0");
+      let hour = String(data.getHours()).padStart(2, "0");
       const minutes = String(data.getMinutes()).padStart(2, "0");
       const seconds = String(data.getSeconds()).padStart(2, "0");
       const date = `${String(data.getDate()).padStart(2, "0")} : ${String(
         data.getMonth() + 1
       ).padStart(2, "0")} : ${String(data.getFullYear()).padStart(2, "0")}`;
-      if (hour >= 12) {
-        setPeriod("PM");
-      } else {
-        setPeriod("AM");
+
+      let period = hour >= 12 ? "PM" : "AM";
+
+      if (hour === 0) {
+        hour = 12;
+      } else if (hour > 12) {
+        hour = hour - 12;
       }
+
       setCurrentDay(day);
-      setCurrentHour(hour);
+      setCurrentHour(String(hour).padStart(2, "0"));
       setCurrentMinutes(minutes);
       setCurrentSeconds(seconds);
       setCurrentDate(date);
+      setPeriod(period);
     }
 
     updateClock();

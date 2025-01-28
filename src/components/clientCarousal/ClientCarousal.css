@@ -1,0 +1,49 @@
+.carousal-container {
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousal-container > div {
+    display: flex;
+}
+
+.carousal-card {
+    position: relative;
+  padding: 10px;
+}
+
+.carousal-card > h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.carousal-card > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.carousal-btn {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+.carousal-btn > button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.carousal-btn > button:hover {
+  cursor: pointer;
+}
