@@ -26,7 +26,7 @@ html,body{
 }
 
 .project-show{
-    width: calc(100% - 300px);
+    width: calc(100% - 300px) !important;
     box-sizing: border-box;
     height: 100vh;
 }
